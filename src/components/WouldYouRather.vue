@@ -1,7 +1,7 @@
 <template>
   <div class="wyr">
 
-    <h2>Please make your choice!</h2>
+    <h2>Would you rather...</h2>
 
     <h3>{{ question }}</h3>
 
@@ -21,6 +21,8 @@
 export default {
 
   name: 'WouldYouRather',
+
+  emits: ['answer-changed'],
 
   /* Data sent from parent component to child is stored in props.
   Props: provided by parent component. Data: stored or generated internally. */
